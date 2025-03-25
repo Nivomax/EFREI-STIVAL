@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Utiliser fixed pour couvrir toute la fenêtre */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.74); /* Couleur semi-transparente */
+    z-index: -1;
+    pointer-events: none; /* Permet de cliquer à travers le pseudo-élément */
+}
+
+/* ============================== navbar ================================= */
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    pointer-events: visible; /* Permet de cliquer à travers le pseudo-élément */
+    padding: 0;
+}
+
+.navbar.active {
+    z-index: 1000;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;*
+    display: none;
+}
+
+.menu-btn {
+    position: absolute;
+}
+
+.menu-btn:hover {
+    background-color: #ffffff00;
+    transform: scale(1.05);
+}
+
+.nav-links {
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    position: absolute;
+    padding: 100% 100%;
+    text-align: center;
+    display: none;
+}
+
+.nav-links ul{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10rem;
+
+}
+
+.nav-links.active {
+    display: block;
+    z-index: 1000; /* Valeur pour le premier plan */
+}
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgba(255, 0, 0, 0.87);
+    transform: scale(1.05);
+    -webkit-text-stroke: 1.5px #ffffff;
+
+}
+/* ================================== fin navbar ================================= */
+/* ================================= footer ======================*/
+
+footer {
+    background-color: transparent;
+    border-top: 2px solid rgba(255,255,255, 0.2);
+    backdrop-filter: blur(20px);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+/* =============================== fin footer ======================*/
+
+main {
+    margin: 5vw 5vw;
+}
+/*================================== Programmation ===============================*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+}
+
+.col {
+    backdrop-filter: blur(0px);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.col:hover {
+    font-weight: bold;
+    transform: scale(1.10);
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p {
+    padding: 25px 10px;
+}
+
+.row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
+h1{
+    font-size: 6vw;
+}
+/*================================== fin Programmation ===============================*/
