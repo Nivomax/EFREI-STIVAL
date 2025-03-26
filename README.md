@@ -21,3 +21,6 @@ PAGE LINEUP:
 - link chaque artiste a sa page
 - finir l'emploi du temps, et link les blaze des artiste dans le tableau
 - trouver une solution pour le backgroud des bouttons "back" et "all, Friday, Sarturday et sunday"
+
+à FAIRE, BDD:
+Achat ticket, bénévolat et donation
