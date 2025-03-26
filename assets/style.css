@@ -133,16 +133,15 @@ main {
     margin: 5vw 5vw;
 }
 /*================================== Programmation ===============================*/
-
-
-.prog a{
+.prog a {
     text-decoration: none;
     color: white;
-    backdrop-filter: blur(10px);
-
+    font-size: 20px;
 }
+
 .prog a :hover{
       background-color: rgb(255, 255, 255);
+    font-size: 20px;
   }
 
 a{
@@ -165,7 +164,7 @@ a:hover{
     backdrop-filter: blur(0px);
     overflow: hidden;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .col:hover {
@@ -205,3 +204,8 @@ h2{
     font-size: 20px;
 }
 /*================================== fin Programmation ===============================*/
+/*================================== infos ===============================*/
+.nous a{
+    font-size: 25px;
+}
+/*================================== fin infos ===============================*/
