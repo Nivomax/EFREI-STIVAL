@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url('../assets/img/concert.jpg') no-repeat center center fixed;
+    background-color: black;
     background-size: cover;
     position: relative;
     overflow-x: hidden;
@@ -130,7 +130,7 @@ footer a:hover {
 /* =============================== fin footer ======================*/
 
 main {
-    margin: 5vw 0vw;
+    margin-top : 5vw;
 }
 /*================================== Programmation ===============================*/
 .prog a {
@@ -157,7 +157,10 @@ a:hover{
 .container{
     color: #ffffff;
     text-align: center;
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .col {
@@ -184,7 +187,7 @@ a:hover{
     height: auto;
 }
 
-.col p {
+.col h2 {
     padding: 25px 10px;
 }
 
@@ -192,20 +195,11 @@ a:hover{
     padding-right: 0;
     padding-left: 0;
 }
-h1{
-    font-size: 4.5vw;
-}
-
-h2{
-    font-size: 4vw;
-}
 
 .presentation{
     font-size: 20px;
 }
 /*================================== fin Programmation ===============================*/
 /*================================== infos ===============================*/
-.nous a{
-    font-size: 25px;
-}
+
 /*================================== fin infos ===============================*/
