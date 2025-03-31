@@ -125,6 +125,7 @@ footer a {
 footer a:hover {
     color: #fd0202;
     text-decoration: underline;
+
 }
 
 /* =============================== fin footer ======================*/
@@ -132,6 +133,16 @@ footer a:hover {
 main {
     margin-top : 5vw;
 }
+
+button:hover {
+    background-color: white !important;
+    color: red !important;
+    font-weight: bold !important;
+    font-weight: bold;
+    transform: scale(1.10);
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
 /*================================== Programmation ===============================*/
 .prog a {
     text-decoration: none;
