@@ -16,11 +16,5 @@ PAGE INFOS :
 - map de l'adresse
 - bouton lien vers cagnotte
 
-PAGE LINEUP:
-- ajuster les dimmension de la page 1plike140 pour les dupliquer par la suite
-- link chaque artiste a sa page
-- finir l'emploi du temps, et link les blaze des artiste dans le tableau
-- trouver une solution pour le backgroud des bouttons "back" et "all, Friday, Sarturday et sunday"
-
 à FAIRE, BDD:
 Achat ticket, bénévolat et donation
