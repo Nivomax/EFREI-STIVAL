@@ -16,7 +16,7 @@
 <!-- ============ header ========== -->
 <header>
   <div class="navbar">
-    <img src="../assets/img/toggle-white.png" alt="" class="menu-btn">
+    <img src="../assets/img/toggle-white.png" alt="" class="menu-btn shadow">
     <div class="menu-container">
       <div class="nav-links">
         <ul>
@@ -34,37 +34,41 @@
 <!-- ========== fin header ========== -->
 <!-- ========== main ========== -->
 
-<main class="text-center text-white">
-  <div class="bg-white text-black p-5 vh-75 vw-100">
-    <h1 class="m-5"> BECOME A VOLUNTEER</h1>
+<main class="text-center">
+
+  <div class="bg-secondary text-white p-5  vh-75 vw-100">
+    <h1 class="mb-5"> BECOME A VOLUNTEER</h1>
     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nam nulla odio omnis quidem quos reiciendis! Accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi aspernatur beatae consequatur dolorem, doloremque ea est eveniet excepturi harum hic nemo nesciunt obcaecati, omnis quas quidem rem, tenetur voluptate! aliquam aperiam blanditiis dignissimos impedinam nulla, qui quos ratione ut voluptatem voluptatum</p>
   </div>
 
-  <div class="p-5">
-    <h1 class="m-5">WOULD YOU LIKE TO JOIN US ON THIS ADVENTURE ? </h1>
+  <div class="p-5 text-white bg-dark m-5 rounded-5 shadow-lg">
     <h2 class="m-5">SIGN UP RIGHT HERE :</h2>
     <form action="traitement.php" method="POST" class="row row-cols-1 justify-content-center text-center">
 
       <div class="row row-cols-1 row-cols-md-1 justify-content-center text-center">
         <div class="col form-group pb-4">
-          <input type="text" name="firstName" class="form-control w-75 mx-auto p-2" id="firstname" placeholder="First name" autocomplete="given-name" required />
+          <input type="text" name="firstName" class="form-control w-75 mx-auto p-2 " id="firstname" placeholder="First name" autocomplete="given-name" required />
         </div>
 
         <div class="col form-group pb-4">
-          <input type="text" name="lastName" class="form-control w-75 mx-auto p-2" id="name" placeholder="Last name" autocomplete="family-name" required />
+          <input type="text" name="lastName" class="form-control w-75 mx-auto p-2  " id="name" placeholder="Last name" autocomplete="family-name" required />
         </div>
 
         <div class="col form-group pb-4">
-          <input type="number" min="0" class="form-control w-75 mx-auto p-2" name="age" id="age" placeholder="Age" autocomplete="age" required />
+          <input type="number" min="0" class="form-control w-75 mx-auto p-2  " name="age" id="age" placeholder="Age" autocomplete="age" required />
         </div>
 
         <div class="col form-group pb-4">
-          <input type="email" class="form-control w-75 mx-auto p-2" name="email" id="email" placeholder="Email" autocomplete="email" required />
+          <input type="email" class="form-control w-75 mx-auto p-2  " name="email" id="email" placeholder="Email" autocomplete="email" required />
+        </div>
+
+        <div class="col form-group pb-4">
+          <input type="number" min="0" class="form-control w-75 mx-auto p-2  " name="phone" id="phone" placeholder="Phone number" autocomplete="phone" required />
         </div>
 
         <div class="pb-4">
-          <select class=" col form-control w-75 mx-auto" name="jobs" id="jobs" required>
-            <option value="" disabled selected> Choose a job</option>
+          <select class=" col form-control w-75 mx-auto " name="jobs" id="jobs" required>
+            <option value="" disabled selected> - Choose a job - </option>
             <option value="Ticketing">Ticketing</option>
             <option value="Eco Team">Eco Team</option>
             <option value="Beverage">Beverage</option>
@@ -73,7 +77,7 @@
           </select>
         </div>
 
-        <div class=" row col form-group b-2p ">
+        <div class=" row col form-group pb-4 ">
           <label> <input type="checkbox"> Keep me updated on EFREI'STIVAL news</label>
         </div>
 
@@ -83,7 +87,7 @@
       </div>
 
       <div class="container d-flex justify-content-center w-50 ">
-        <button type="submit" class="col border rounded-5 m-3 pb-1 pt-1 w-50 text-center bg-black text-white">
+        <button type="submit" class="col  rounded-5 m-3 pb-1 pt-1 w-50 text-center bg-dark text-white">
           SUBMIT
         </button>
       </div>
