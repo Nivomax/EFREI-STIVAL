@@ -1,5 +1,9 @@
 to do :
-
+- FORMULAIRE : mettre des controles;
+      age : enelever la possibilité des nombre a virgule, limité a 2 caractere max
+      nom et prenom : enlever la possibilité de rentrer des chiffres
+  
+      
 - animation entre chaque page
 
 PAGE ACCUEIL :
