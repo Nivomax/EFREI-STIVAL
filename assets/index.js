@@ -18,3 +18,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // ============================ fin MENU ================================================
+
+// ============================ formulaire ================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("#firstname, #lastname").forEach(input => {
+        input.addEventListener("input", function () {
+            this.value = this.value.replace(/[0-9]/g, '');
+        });
+    });
+});
+
+document.getElementById("age").addEventListener("input", function () {
+    this.value = this.value.replace(/[^0-9]/g, '');
+
+    if (this.value !== "" && (this.value < 1 || this.value > 99)) {
+        this.value = "";
+    }
+});
+
+document.getElementById("phone").addEventListener("input", function () {
+    // Supprime tout sauf les chiffres
+    this.value = this.value.replace(/[^0-9]/g, '');
+
+    // Limite la longueur à 15 chiffres max
+    if (this.value.length > 15) {
+        this.value = this.value.slice(0, 15);
+    }
+});
+
+// ============================ fin formulaire ================================================
