@@ -34,7 +34,7 @@
     <!-- ========== fin header ========== -->
     <!-- ========== main ========== -->
 
-    <main class="text-center text-white">
+    <main class="text-center text-white ">
 
         <div class="p-5">
             <h1 class="m-5"> OUR ENGAGEMENTS</h1>
@@ -42,97 +42,89 @@
             <br>
         </div>
 
-        <div class="box text-white  p-5 vh-60 m-5 rounded-5 shadow">
+        <div class="box text-white  p-5 vh-60 m-5 shadow ">
             <h1 class="mb-5"> FREE PALESTINE !</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto, autem cum, dolores doloribus esse fugiat illo illum iste iure labore magni modi provident soluta voluptas voluptatibus voluptatum. Omnis, sapiente!</p>
             <br>
-            <div class="prog container d-flex justify-content-center w-75">
-                <button type="submit" class="bouton col rounded-5 m-3 pb-1 pt-1  text-center text-white">
+            <div class="prog container d-flex justify-content-center w-50">
+                <button type="submit" class="col m-3 text-center text-white">
                     DONATE NOW
                 </button>
             </div>
         </div>
 
-        <div class=" row  row-cols-3 row-cols-md-3 row-cols-lg-6 d-flex justify-content-center pt-5 vh-60  ">
-            <div class="col colx m-3">
-                <a href="https://www.linkedin.com/in/brouillac/"> <img src="../assets/img/julien.brouillac.jpg" alt="julien" class="rounded-5 border-2 ">
+        <div class=" row row-cols-2 row-cols-md-2 row-cols-lg-5 d-flex justify-content-evenly pt-5 vh-60  ">
+            <div class="col colx  ">
+                <a href="https://www.linkedin.com/in/brouillac/">
+                    <img src="../assets/img/julien.brouillac.jpg" alt="julien" class="rounded-2 border-2 ">
                   <h2>Julien BROUILLAC</h2>
                 </a>
             </div>
 
-            <div class="col colx m-3">
-                <a href="https://www.linkedin.com/in/maxime-madureira/"><img src="../assets/img/maxime.madureira.jpg" alt="Maxime" class="rounded-5 border-2 ">
+            <div class="col colx ">
+                <a href="https://www.linkedin.com/in/maxime-madureira/">
+                    <img src="../assets/img/maxime.madureira.jpg" alt="Maxime" class="rounded-2 border-2 ">
                 <h2>Maxime MADUREIRA</h2>
                 </a>
             </div>
 
-            <div class="col colx m-3">
-                <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/"><img src="../assets/img/chahe.papazian.jpg" alt="chahe" class="rounded-5 border-2 ">
+            <div class="col colx ">
+                <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">
+                    <img src="../assets/img/chahe.papazian.jpg" alt="chahe" class="rounded-2 border-2 ">
                 <h2>Chahé PAPAZIAN</h2>
                 </a>
             </div>
 
-            <div class="col colx m-3">
-                <a href="https://www.linkedin.com/in/timeo-laubignat/"><img src="../assets/img/timéo.gif" alt="timeo" class="rounded-5 border-2 ">
+            <div class="col colx ">
+                <a href="https://www.linkedin.com/in/timeo-laubignat/">
+                    <img src="../assets/img/timéo.gif" alt="timeo" class="rounded-2 border-2 ">
                   <h2>Timéo LAUBIGNAT</h2>
                 </a>
             </div>
         </div>
 
-        <div class="box p-5 m-5 rounded-5 shadow-lg ">
-            <h1 class="m-5">CONTACT US</h1>
-            <form action="traitement.php" method="POST" class="row row-cols-1 justify-content-center text-center">
+        <div class="box text-center w-100 mb-5">
+            <h2 class="m-5">CONTACT US :</h2>
+            <form action="traitement.php" method="POST" class="row g-3">
 
-                <div class="row row-cols-1  row-cols-sm-1 justify-content-center text-center">
-                    <div class="col form-group pb-4">
-                        <input type="text" name="firstName" class="form-control w-75 mx-auto p-2"
-                               id="firstname" placeholder="First name :" autocomplete="given-name" required/>
-                    </div>
-
-                    <div class="col form-group pb-4">
-                        <input type="text" name="lastName" class="form-control w-75 mx-auto p-2"
-                           id="lastname" placeholder="Last name :" autocomplete="family-name" required />
-                    </div>
-
-                    <div class="col form-group pb-4">
-                        <input type="email" class="form-control w-75 mx-auto p-2"
-                               name="email" id="email" placeholder="Email :" autocomplete="email" required
-                               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                               title="Veuillez entrer une adresse email valide." />
-                    </div>
-
-                    <div class="col form-group pb-4">
-                        <input type="text" class="form-control w-75 mx-auto" name="subject"
-                               id="subject" placeholder="Subject :" required />
-                    </div>
-
-                    <div class="col form-group pb-4">
-                        <textarea class="form-control w-75 mx-auto" name="message"
-                                  rows="5" placeholder="Message :" required></textarea>
-                    </div>
+                <div class="col-md-6 pe-2 ps-2 text-center ">
+                    <input type="text" name="firstName" class="form-control" placeholder="First name :" required>
                 </div>
-                    <div class="container d-flex justify-content-center w-50 ">
-                        <button type="submit" class="bouton col rounded-5 m-3 pb-1 pt-1 w-50 text-center text-white">
-                            SUBMIT
-                        </button>
-                    </div>
+                <div class="col-md-6 pe-2 ps-2">
+                    <input type="text" name="lastName" class="form-control" placeholder="Last name :" required>
+                </div>
 
+                <div class="col-md-6 pe-2 ps-2">
+                    <input type="email" name="email" class="form-control" placeholder="Email :" required>
+                </div>
+
+                <div class="col-md-6 pe-2 ps-2">
+                    <input type="number" name="age" class="form-control" placeholder="Age" min="1" max="99" required>
+                </div>
+
+                <div class="col-md-12 pe-2 ps-2">
+                    <textarea name="message" class="form-control" placeholder="Message :" required rows="4" style="resize: none;"></textarea>
+                </div>
+
+                <div class="">
+                    <button type="submit" class="w-50">SUBMIT</button>
+                </div>
             </form>
         </div>
-
     </main>
-
     <!-- ========== fin main ========== -->
     <!-- ========== footer ========== -->
 
     <footer>
-        <h6>Copyright &copy; 2025 — All rights reserved.</h6>
-        <h6>Designed by
-            <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
-            <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
-            <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
-            <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
-        </h6>
+        <div class="m-2 text-center">
+            <h6>Copyright &copy; 2025 — All rights reserved.</h6>
+            <h6>Designed by
+                <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
+                <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
+                <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
+                <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
+            </h6>
+        </div>
     </footer>
     <!-- ========== fin footer ========== -->
 </body>

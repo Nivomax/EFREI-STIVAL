@@ -34,90 +34,62 @@
 <!-- ========== fin header ========== -->
 <!-- ========== main ========== -->
 
-<main class="text-center">
-
-  <div class="bg-transparent text-white p-5  vh-75 vw-100">
-    <h1 class="mb-5"> BECOME A VOLUNTEER</h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nam nulla odio omnis quidem quos reiciendis! Accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi aspernatur beatae consequatur dolorem, doloremque ea est eveniet excepturi harum hic nemo nesciunt obcaecati, omnis quas quidem rem, tenetur voluptate! aliquam aperiam blanditiis dignissimos impedinam nulla, qui quos ratione ut voluptatem voluptatum</p>
-  </div>
-
-  <div class="box p-5 text-white m-5 rounded-5 shadow-lg">
+<main class="d-flex justify-content-center align-items-center vh-100">
+  <div class="box text-center w-75 rounded-5">
     <h2 class="m-5">SIGN UP RIGHT HERE :</h2>
-    <form action="traitement.php" method="POST" class="row row-cols-1 justify-content-center text-center">
-
-      <div class="row row-cols-1 row-cols-lg-2 row-cols-sm-1 justify-content-center text-center">
-        <div class="col form-group pb-4">
-          <input type="text" name="firstName" class="form-control w-75 mx-auto p-2"
-                 id="firstname" placeholder="First name :" autocomplete="given-name" required/>
-        </div>
-
-        <div class="col form-group pb-4">
-          <input type="text" name="lastName" class="form-control w-75 mx-auto p-2"
-                 id="lastname" placeholder="Last name :" autocomplete="family-name" required />
-        </div>
-
-        <div class="col form-group pb-4">
-          <input type="number" name="age" class="form-control w-75 mx-auto p-2"
-                 id="age" placeholder="Age :" autocomplete="age" required
-                 min="1" max="99" />
-        </div>
-
-        <div class="col form-group pb-4">
-          <input type="email" class="form-control w-75 mx-auto p-2"
-                 name="email" id="email" placeholder="Email :" autocomplete="email" required
-                 pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                 title="Veuillez entrer une adresse email valide." />
-        </div>
-
-        <div class="col form-group pb-4">
-          <input type="tel" class="form-control w-75 mx-auto p-2"
-                 name="phone" id="phone" placeholder="Phone number :" autocomplete="tel" required
-                 pattern="[0-9]{10,15}"
-                 title="Veuillez entrer un numéro valide." />
-        </div>
-
-        <div class="col pb-4">
-          <label for="jobs" class="d-block text-center "></label>
-          <select class="form-control w-75 mx-auto p-2" name="jobs" id="jobs" required>
-            <option value="" disabled selected > Choose a job : </option>
-            <option value="Ticketing">Ticketing</option>
-            <option value="Eco Team">Eco Team</option>
-            <option value="Beverage">Beverage</option>
-            <option value="Security">Security</option>
-            <option value="All">All</option>
-          </select>
-        </div>
+    <form action="traitement.php" method="POST" class="row g-3">
+      <div class="col-md-6 pe-2 ps-2">
+        <input type="text" name="firstName" class="form-control" placeholder="First name" required>
       </div>
-        <div class=" row col form-group pb-4 pt-4 ">
-          <label> <input type="checkbox"> Keep me updated on EFREI'STIVAL news</label>
-        </div>
-
-        <div class=" row col form-group pb-4 ">
-          <label> <input type="checkbox" required> Accept the terms and conditions of use</label>
-        </div>
-
-
-      <div class="container d-flex justify-content-center w-50 ">
-        <button type="submit" class="box col rounded-5 m-3 pb-1 pt-1 w-50 text-center  text-white">
-          SUBMIT
-        </button>
+      <div class="col-md-6 pe-2 ps-2">
+        <input type="text" name="lastName" class="form-control" placeholder="Last name" required>
+      </div>
+      <div class="col-md-6 pe-2 ps-2">
+        <input type="number" name="age" class="form-control" placeholder="Age" min="1" max="99" required>
+      </div>
+      <div class="col-md-6 pe-2 ps-2">
+        <input type="tel" name="phone" class="form-control" placeholder="Phone number" required>
+      </div>
+      <div class="col-md-12 pe-2 ps-2">
+        <input type="email" name="email" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="col-md-12 pe-2 ps-2">
+        <select name="jobs" class="form-control" required>
+          <option value="" disabled selected>Choose a job</option>
+          <option value="Ticketing">Ticketing</option>
+          <option value="Eco Team">Eco Team</option>
+          <option value="Beverage">Beverage</option>
+          <option value="Security">Security</option>
+          <option value="All">All</option>
+        </select>
+      </div>
+      <div class="col-md-12 text-start pe-2 ps-2">
+        <label><input type="checkbox"> Keep me updated on EFREI'STIVAL news</label>
+      </div>
+      <div class="col-md-12 text-start pe-2 ps-2">
+        <label><input type="checkbox" required> Accept the terms and conditions</label>
+      </div>
+      <div class="col-md-12">
+        <button type="submit" class="w-75">SUBMIT</button>
       </div>
     </form>
   </div>
 </main>
 
-<!-- ========== fin main ========== -->
-<!-- ========== footer ========== -->
+  <!-- ========== fin main ========== -->
+  <!-- ========== footer ========== -->
 
-<footer>
-  <h6>Copyright &copy; 2025 — All rights reserved.</h6>
-  <h6>Designed by
-    <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
-    <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
-    <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
-    <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
-  </h6>
-</footer>
-<!-- ========== fin footer ========== -->
+  <footer>
+    <div class="m-2 text-center">
+      <h6>Copyright &copy; 2025 — All rights reserved.</h6>
+      <h6>Designed by
+        <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
+        <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
+        <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
+        <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
+      </h6>
+    </div>
+  </footer>
+  <!-- ========== fin footer ========== -->
 </body>
 </html>
