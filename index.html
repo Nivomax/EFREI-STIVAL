@@ -1,82 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Programmation</title>
+    <title>volunteer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css">
-    <script src="assets/index.js" defer></script>
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="../assets/index.js" defer></script>
+    <script src="../assets/compteur.js" defer></script>
+    <script src="../assets/timer.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" defer></script>
+    <style>
+        .carousel-20-height {
+            height: 20vh; /* 20% de la hauteur de la fenêtre */
+        }
+    </style>
 </head>
-<body>
-<!-- ========== header ========== -->
 
-<div class="navbar">
-    <div class="menu-container">
-        <div class="nav-links">
-            <ul>
-                <li><a href="/index.html">ACCUEIL</a></li>
-                <li><a href="./autres/ticket.html">TICKET</a></li>
-                <li><a href="autres/lineup.html">PROGRAMMATION</a></li>
-                <li><a href="autres/volunteer.html">BÉNÉVOLE</a></li>
-                <li><a href="./autres/infos.html">INFOS</a></li>
-            </ul>
+<body>
+<!-- ============ header ========== -->
+<header>
+    <div class="navbar">
+        <img src="/assets/img/toggle-white.png" alt="" class="menu-btn shadow">
+        <div class="menu-container">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="autres/ticket.html">TICKETS</a></li>
+                    <li><a href="autres/lineup.html">PROGRAMMATION</a></li>
+                    <li><a href="autres/volunteer.html">BÉNÉVOLE</a></li>
+                    <li><a href="autres/infos.html">INFOS</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <img src=".//assets/img/menu-btn.png" alt="" class="menu-btn">
-</div>
+</header>
 
 <!-- ========== fin header ========== -->
-<!-- ========== main ================ -->
+<!-- ========== main ========== -->
 
-<div class="container">
-    <div class="row">
-        <h1>EFREI'STIVAL</h1>
-        <h2>1er, 2 et 3 aout 2025 </h2>
-        <h3>100% des bénéfices reversés pour la Palestine</h3>
-        <button class="btn"> RÉSERVE TA PLACE !</button>
-        <button class="btn"> DÉCOUVRE LA PROGRAMMATION</button>
-        <button class="btn"> DEVENIR BÉNÉVOLE</button>
-        <button class="btn">NOS ENGAGEMENTS</button>
+<main class="d-flex   flex-column">
+    <div class="w-100 vh-100 text-center">
+        <div id="carouselExample" class="carousel slide mb-5 carousel-20-height" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner h-100">
+
+                <div class="carousel-item active h-100">
+                    <img src="assets/img/concert.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="assets/img/tunisie.png" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="assets/img/wallpapper.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <h1 class="m-5"> EFREI'STIVAL</h1>
+            <h2 class="m-5"> 1st, 2nd and 3rd august 2025</h2>
+            <h2> 100% des bénéfices revsersé pour la palestine</h2>
+            <br>
+        </div>
+
+        <div class="box text-white  p-5 vh-60 bg-transparent ">
+            <div class=" row  row-cols-1 row-cols-lg-5 d-flex justify-content-evenly ">
+                <a href="autres/ticket.html"><button type="submit" class=" col mt-2 mb-2  p-4 w-100 text-center  ">BUY TICKETS</button></a>
+                <a href="autres/lineup.html"><button type="submit" class=" col mt-2 mb-2  p-4 w-100  text-center  ">DISCOVER THE LINE-UP</button></a>
+                <a href="autres/volunteer.html"><button type="submit" class=" col mt-2 mb-2  p-4 w-100  text-center  ">BECOME VOLUNTEER</button></a>
+                <a href="autres/infos.html"><button type="submit" class=" col mt-2 mb-2  p-4 w-100 text-center ">GET MORE INFORMATIONS</button></a>
+            </div>
+        </div>
+
+        <div class="box text-white  p-5 vh-60  shadow ">
+            <h1 class="mb-5"> RENDEZ-VOUS IN : </h1>
+        </div>
     </div>
-</div>
-
-
-
-    <section class="bloc-timer">
-        <h1>RENDEZ-VOUS DANS :</h1>
-        <p id="countdown" class="timer"></p>
-    </section>
-
-<div class="bg-white text-black p-5 vh-100 m-5 rounded-5">
-    <h1 class="m-5 "> WHERE TO FIND US ?</h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio obcaecati odit porro repellat totam ut velit. Consequatur dolor doloribus fugit molestiae obcaecati praesentium quos saepe voluptas. Ad delectus eius maiores.</p>
-    <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8937.749873045637!2d10.256122351875076!3d36.75407251487173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd49e2ba870e0f%3A0x5ff3585235a59361!2zRm9yw6p0IGRlIFJhZMOocw!5e0!3m2!1sfr!2sfr!4v1742985606016!5m2!1sfr!2sfr"
-            width="85%"
-            height="50%"
-            tyle="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="col ">
-    </iframe>
-</div>
 </main>
-<!-- ========== fin main ============== -->
-<!-- ========== footer ============== -->
+
+<!-- ========== fin main ========== -->
+<!-- ========== footer ========== -->
+
 <footer>
-    <p>Copyright &copy; 2025 — All rights reserved.</p>
-    <p>Designed by
-        <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
-        <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
-        <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
-        <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
-    </p>
+    <div class="m-2 text-center">
+        <h6>Copyright &copy; 2025 — All rights reserved.</h6>
+        <h6>Designed by
+            <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
+            <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
+            <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
+            <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
+        </h6>
+    </div>
 </footer>
-<!-- ========== fin footer ============== -->
+<!-- ========== fin footer ========== -->
 </body>
 </html>
