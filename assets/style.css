@@ -16,6 +16,7 @@ body {
     padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 input, select, textarea, option{
     background: rgba(255, 255, 255, 0.2) !important;
     border: none !important;
@@ -59,9 +60,10 @@ button:hover {
         margin-left: 70px !important;
         margin-right: 70px !important;
         margin-bottom: 70px !important;
-
     }
+
 }
+
 
 @media (max-width: 767px) { /* Petits écrans (smartphones) */
     main {
@@ -70,7 +72,12 @@ button:hover {
     }
 }
 
-
+@media screen and (max-width: 480px) {
+    .button {
+        width: 10vw;
+        height: auto; /* Pour maintenir les proportions */
+    }
+}
 
 
 /* ============================== navbar ================================= */
@@ -99,11 +106,13 @@ button:hover {
 .menu-btn {
     position: absolute;
     top: 0;
-    right: 5vw;
+    right: 3vw;
     width: 3vw;
     height: auto;
-    margin-top: 5vw;
+    margin-top: 3vw;
 }
+
+
 
 .menu-btn:hover {
     background-color: #ffffff00;
@@ -214,15 +223,22 @@ a{
     font-weight: bold;
     transform: scale(1.10);
     transition: transform 0.6s ease, box-shadow 0.3s ease;
+
 }
 
 .star{
     width: 100%;
     height: auto;
 }
+
 .col img {
     width: 90%;
     height: auto;
+    border: 2px solid #4752c4;
+}
+
+.col img:hover {
+    border: 5px solid #404cc8;
 }
 
 .col h2 {
@@ -238,5 +254,3 @@ a{
     font-size: 20px;
 }
 /*================================== fin Programmation ===============================*/
-/*================================== formulaire ===============================*/
-/*================================== fin formulaire ===============================*/
