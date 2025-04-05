@@ -5,44 +5,124 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Programmation</title>
+  <title>volunteer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/style.css">
   <script src="../assets/index.js" defer></script>
-
+  <script src="../assets/compteur.js" defer></script>
+  <script src="../assets/timer.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" defer></script>
+  <style>
+      .carousel-20-height {
+          height: 20vh; /* 20% de la hauteur de la fenêtre */
+      }
+  </style>
 </head>
-
 
 <body>
 <!-- ============ header ========== -->
-<div class="navbar">
-  <div class="menu-container">
-    <div class="nav-links">
-      <ul>
-        <li><a href="../index.html">ACCUEIL</a></li>
-        <li><a href="../autres/ticket.html">TICKET</a></li>
-        <li><a href="lineup.html">PROGRAMMATION</a></li>
-        <li><a href="volunteer.html">BÉNÉVOLE</a></li>
-        <li><a href="../autres/infos.html">INFOS</a></li>
-      </ul>
+<header>
+  <div class="navbar">
+    <img src="../assets/img/toggle-white.png" alt="" class="menu-btn shadow">
+    <div class="menu-container">
+      <div class="nav-links">
+        <ul>
+          <li><a href="../index.html">ACCUEIL</a></li>
+          <li><a href="../autres/ticket.html">TICKETS</a></li>
+          <li><a href="../autres/lineup.html">PROGRAMMATION</a></li>
+          <li><a href="../autres/volunteer.html">BÉNÉVOLE</a></li>
+          <li><a href="../autres/infos.html">INFOS</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-  <img src="../assets/img/menu-btn.png" alt="" class="menu-btn">
-</div>
+</header>
+
 <!-- ========== fin header ========== -->
-<br>
+<!-- ========== main ========== -->
+
+<main class="d-flex   flex-column">
+
+
+    <div class="w-100 vh-90">
+      <div class="p-5 text-center">
+        <h1 class="m-5"> OUR ENGAGEMENTS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto asperiores aspernatur excepturi id, inventore libero magnam minima natus nihil placeat, possimus provident suscipit totam ut veritatis vero vitae. Nobis?adipisicing elit. Amet architecto, autem cum, dolores doloribus esse fugiat illo illum iste iure labore magni modi provident soluta voluptas voluptatibus voluptatum. Omnis, sapiente!</p>
+        <br>
+      </div>
+
+      <div class="text-center row row-cols-1 row-cols-md-5 justify-content-evenly mt-5 ">
+        <div class="box col  border p-2 border-5 rounded-5">
+          <h3>3 DAYS ACCESS</h3>
+          <p class="price">$99</p>
+          <div>
+            <button id="btn-decrease4">-</button>
+            <span id="count4">0</span>
+            <button id="btn-increase4">+</button>
+          </div>
+        </div>
+
+        <div class="box col  border p-2 border-5 rounded-5 ">
+          <h3>FRIDAY 1st </h3>
+          <p class="price">$39</p>
+          <div>
+            <button id="btn-decrease">-</button>
+            <span id="count">0</span>
+            <button id="btn-increase">+</button>
+          </div>
+        </div>
+
+        <div class="box col  border p-2 border-5 rounded-5 ">
+          <h3>SATURDAY 2nd </h3>
+          <p class="price">$39</p>
+          <div>
+            <button id="btn-decrease2">-</button>
+            <span id="count2">0</span>
+            <button id="btn-increase2">+</button>
+          </div>
+        </div>
+
+        <div class="box col  border p-2 border-5 rounded-5 ">
+          <h3>SUNDAY 3rd </h3>
+          <p class="price">$39</p>
+          <div>
+            <button id="btn-decrease3">-</button>
+            <span id="count3">0</span>
+            <button id="btn-increase3">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h1 class="mb-0">CART</h1>
+          <button id="btn-clear-cart">CLEAR</button>
+        </div>
+        <hr>
+        <ul id="article-list"></ul>
+        <hr>
+        <span id="panier-price"></span> <br>
+        <button>BUY</button>
+      </div>
+    </div>
+</main>
+
+<!-- ========== fin main ========== -->
+<!-- ========== footer ========== -->
 
 <footer>
-  <p>Copyright &copy; 2025 — All rights reserved.</p>
-  <p>Designed by
-    <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
-    <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
-    <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
-    <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
-  </p>
+  <div class="m-2 text-center">
+    <h6>Copyright &copy; 2025 — All rights reserved.</h6>
+    <h6>Designed by
+      <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
+      <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
+      <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
+      <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
+    </h6>
+  </div>
 </footer>
-
-
+<!-- ========== fin footer ========== -->
 </body>
 </html>
