@@ -8,5 +8,5 @@ PAGE TICKET :
 PAGE BENEVOLE :
 - alerte de validation quand formulaire bien envoyé
 
-à FAIRE, BDD:
+à FAIRE, BDD :
 Achat ticket, bénévolat et donation
