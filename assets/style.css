@@ -67,6 +67,15 @@ button:hover {
     transform: scale(1.10);
     transition: transform 0.6s ease, box-shadow 0.3s ease;
 }
+.buy{
+    background: rgba(3, 175, 20, 0.87);
+
+}
+
+.buy:hover{
+    background: rgba(2, 131, 16, 0.87);
+
+}
 
 .t:hover{
     background: rgba(255, 168, 7, 0.87);
@@ -120,12 +129,35 @@ button:hover {
     font-weight: bold;
 }
 
+.titre-ticket{
+    font-size: 80px;
+    font-weight: bold;
+
+}
+
 .date{
     font-size: 40px;
 }
 
 .palestine{
     font-size: 40px;
+}
+
+.place{
+    font-size: 40px;
+    color: black;
+   }
+
+.price{
+    font-size: 60px;
+}
+
+.day{
+    font-size: 30px;
+}
+
+.offre{
+    background-color: #fafafa;
 }
 /* ============================== navbar ================================= */
 .navbar{
@@ -214,6 +246,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 1vw;
+
 }
 
 footer p {
@@ -229,8 +262,8 @@ footer a {
 }
 
 footer a:hover {
-    color: rgba(255, 0, 0, 0.87);
-    text-decoration: underline;
+    color: rgba(178, 190, 251, 0.87);
+    text-decoration: none;
 
 }
 /* =============================== fin footer ======================*/
