@@ -46,3 +46,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+    const confirmationMessage = document.getElementById('confirmationMessage');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Empêche l'envoi réel du formulaire
+
+        // Affiche le message
+        confirmationMessage.classList.remove('d-none');
+
+        // Optionnel : Réinitialise le formulaire
+        form.reset();
+
+        // Optionnel : Masque le message après quelques secondes
+        setTimeout(() => {
+            confirmationMessage.classList.add('d-none');
+        }, 10000);
+    });
+});

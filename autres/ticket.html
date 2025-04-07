@@ -14,43 +14,39 @@
   <script src="../assets/timer.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" defer></script>
-  <style>
-      .carousel-20-height {
-          height: 20vh; /* 20% de la hauteur de la fenêtre */
-      }
-  </style>
 </head>
 
 <body class="body-ticket">
 <!-- ============ header ========== -->
 <header>
   <div class="navbar">
-    <img src="../assets/img/toggle-white.png" alt="" class="menu-btn shadow">
+    <img src="/assets/img/toggle-white.png" alt="" class="menu-btn shadow">
     <div class="menu-container">
       <div class="nav-links">
         <ul>
-          <li><a href="../index.html">ACCUEIL</a></li>
-          <li><a href="../autres/ticket.html">TICKETS</a></li>
-          <li><a href="../autres/lineup.html">PROGRAMMATION</a></li>
-          <li><a href="../autres/volunteer.html">BÉNÉVOLE</a></li>
-          <li><a href="../autres/infos.html">INFOS</a></li>
+          <li><a href="../index.html" class="nav-h">HOME</a></li>
+          <li><a href="../autres/ticket.html" class="nav-t">TICKETS</a></li>
+          <li><a href="../autres/lineup.html" class="nav-l">LINE-UP</a></li>
+          <li><a href="../autres/volunteer.html" class="nav-v">VOLUNTEER</a></li>
+          <li><a href="../autres/infos.html" class="nav-i">INFOS</a></li>
         </ul>
       </div>
     </div>
   </div>
 </header>
 
+
 <!-- ========== fin header ========== -->
 <!-- ========== main ========== -->
 
 <main class="d-flex flex-column ">
 
-    <div class=" ">
+    <div>
       <div class="p-5 text-center">
-        <h1 class="m-5 titre-ticket"> RESERVE YOUR PLACES </h1>
+        <h1 class="m-5 titre-autres"> RESERVE YOUR PLACES </h1>
       </div>
 
-      <div class="text-center row row-cols-1 row-cols-md-5 justify-content-evenly p-5 g-5 text-black">
+      <div class="text-center row row-cols-1 row-cols-md-5 justify-content-evenly pb-5 pe-5 ps-5 g-5 text-black">
         <div class="box offre col  border   rounded-2 ">
           <h3 class="day">3 DAYS ACCESS</h3>
           <h1 class="price">$99</h1>
@@ -95,15 +91,17 @@
       <div class="box mt-5">
         <div class="d-flex justify-content-between align-items-center mb-3">
           <h1 class="mb-0">CART</h1>
-          <button id="btn-clear-cart ">CLEAR</button>
+          <button id="btn-clear-cart">CLEAR</button>
         </div>
         <hr>
-        <ul id="article-list"></ul>
+        <ul id="article-list" class="article-list"></ul>
         <hr>
-        <span id="panier-price"></span> <br>
+        <span id="panier-price" class="total-price "></span> <br>
         <button class=" buy mt-3 pe-5 ps-5 rounded-1">BUY</button>
       </div>
     </div>
+  <div id="confirmationAchat" class="alert alert-success mt-4 d-none" role="alert"></div>
+
 </main>
 
 <!-- ========== fin main ========== -->

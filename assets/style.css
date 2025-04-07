@@ -11,11 +11,11 @@
 }
 
 .body-ticket{
-    background: linear-gradient(135deg, rgba(177, 177, 177, 0.63), rgba(255, 168, 7, 0.87));
+    background: linear-gradient(135deg, rgba(177, 177, 177, 0.63), rgba(34, 229, 255, 0.87));
 }
 
 .body-lineup{
-    background: linear-gradient(135deg, rgba(177, 177, 177, 0.63), rgba(34, 229, 255, 0.87));
+    background: linear-gradient(135deg, rgba(255, 218, 183, 0.84), rgb(255, 153, 0));
 }
 
 .body-volunteer{
@@ -39,16 +39,16 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-input, select, textarea, option{
+input, select, textarea {
     background: rgba(255, 255, 255, 0.2) !important;
     border: none !important;
-    color: white !important;
+    color: rgb(255, 255, 255);
     padding: 12px;
     border-radius: 8px;
 }
 
 input::placeholder {
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 button {
@@ -78,11 +78,11 @@ button:hover {
 }
 
 .t:hover{
-    background: rgba(255, 168, 7, 0.87);
+    background: rgba(34, 229, 255, 0.87);
 }
 
 .d:hover{
-    background: rgba(34, 229, 255, 0.87);
+    background: rgb(255, 165, 0);
 }
 
 .b:hover{
@@ -93,22 +93,27 @@ button:hover {
     background: rgba(119, 255, 62, 0.92);
 
 }
-@media (min-width: 1200px) { /* Écrans larges (PC grand écran) */
+/* Écrans larges (PC grand écran) */
+@media (min-width: 1200px) {
     main {
         margin-left: 150px !important;
         margin-right: 150px !important;
         margin-bottom: 150px !important;
-
     }
 }
 
-
-
-
-@media (max-width: 767px) { /* Petits écrans (smartphones) */
+/* Petits écrans (smartphones) */
+@media (max-width: 767px) {
     main {
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+    /* Réduire la taille de la police pour les petits écrans */
+    .titre {
+        font-size: 50px !important; /* Ajout de !important pour surcharger les autres règles */
+    }
+    .titre-autres {
+        font-size: 40px !important; /* Ajout de !important pour surcharger les autres règles */
     }
 }
 
@@ -119,20 +124,23 @@ button:hover {
     }
 }
 
+.titre {
+    font-size: 100px;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.titre-autres {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+
+
 #timer {
     font-size: 70px;
     font-weight: bold;
-}
-
-.titre{
-    font-size: 100px;
-    font-weight: bold;
-}
-
-.titre-ticket{
-    font-size: 80px;
-    font-weight: bold;
-
 }
 
 .date{
@@ -158,6 +166,15 @@ button:hover {
 
 .offre{
     background-color: #fafafa;
+}
+
+.total-price{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.article-list{
+    font-size: 20px;
 }
 /* ============================== navbar ================================= */
 .navbar{
@@ -229,10 +246,29 @@ button:hover {
 }
 
 .nav-links a:hover {
-    color: rgb(109, 220, 255);
     transform: scale(1.05);
     -webkit-text-stroke: 1.5px #ffffff;
+}
 
+.nav-h:hover{
+    color: rgb(255, 109, 109);
+}
+
+.nav-t:hover{
+    color: rgba(34, 229, 255, 0.87);
+
+}
+
+.nav-l:hover{
+    color: rgba(255, 168, 7, 0.87);
+}
+
+.nav-v:hover{
+    color: rgba(251, 103, 242, 0.75);
+}
+
+.nav-i:hover{
+    color: rgba(119, 255, 62, 0.92);
 }
 /* ================================== fin navbar ================================= */
 /* ================================= footer ======================*/
@@ -317,7 +353,7 @@ a{
 }
 
 .col img:hover {
-    border: 3px solid rgba(255, 0, 0, 0.87);
+    border: 3px solid rgba(255, 255, 255, 0.74);
 }
 
 .col h3 {

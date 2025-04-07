@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>VOLUNTEER</title>
+  <title>INFORMATIONS</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/style.css">
@@ -16,15 +16,15 @@
 <!-- ============ header ========== -->
 <header>
   <div class="navbar">
-    <img src="../assets/img/toggle-white.png" alt="" class="menu-btn shadow">
+    <img src="/assets/img/toggle-white.png" alt="" class="menu-btn shadow">
     <div class="menu-container">
       <div class="nav-links">
         <ul>
-          <li><a href="../index.html">ACCUEIL</a></li>
-          <li><a href="../autres/ticket.html">TICKETS</a></li>
-          <li><a href="../autres/lineup.html">PROGRAMMATION</a></li>
-          <li><a href="../autres/volunteer.html">BÉNÉVOLE</a></li>
-          <li><a href="../autres/infos.html">INFOS</a></li>
+          <li><a href="../index.html" class="nav-h">HOME</a></li>
+          <li><a href="../autres/ticket.html" class="nav-t">TICKETS</a></li>
+          <li><a href="../autres/lineup.html" class="nav-l">LINE-UP</a></li>
+          <li><a href="../autres/volunteer.html" class="nav-v">VOLUNTEER</a></li>
+          <li><a href="../autres/infos.html" class="nav-i">INFOS</a></li>
         </ul>
       </div>
     </div>
@@ -34,62 +34,68 @@
 <!-- ========== fin header ========== -->
 <!-- ========== main ========== -->
 
-<main class="d-flex justify-content-center align-items-center vh-100">
-  <div class="box text-center w-75 rounded-5">
-    <h2 class="m-5">SIGN UP RIGHT HERE :</h2>
-    <form action="traitement.php" method="POST" class="row g-3">
-      <div class="col-md-6 pe-2 ps-2">
-        <input type="text" name="firstName" class="form-control" placeholder="First name" required>
+<main class="text-black">
+    <div>
+        <div class="p-5 text-center">
+          <h1 class="m-5 titre-autres text-white"> BECOME VOLUNTEER </h1>
+        </div>
+        <div class="box text-center rounded-2">
+        <h2 class="m-5 text-white">SIGN UP RIGHT HERE :</h2>
+        <form action="traitement.php" method="POST" class="row g-3">
+            <div class="col-md-6 pe-2 ps-2">
+                <input type="text" name="firstName" class="form-control" placeholder="First name" required>
+            </div>
+            <div class="col-md-6 pe-2 ps-2">
+                <input type="text" name="lastName" class="form-control" placeholder="Last name" required>
+            </div>
+            <div class="col-md-6 pe-2 ps-2">
+                <input type="number" name="age" class="form-control" placeholder="Age" min="1" max="99" required>
+            </div>
+            <div class="col-md-6 pe-2 ps-2">
+                <input type="tel" name="phone" class="form-control" placeholder="Phone number" required>
+            </div>
+            <div class="col-md-12 pe-2 ps-2">
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-md-12 pe-2 ps-2">
+                <select name="jobs" class="form-control" required>
+                  <option value="" disabled selected>Choose a job</option>
+                  <option value="Ticketing">Ticketing</option>
+                  <option value="Eco Team">Eco Team</option>
+                  <option value="Beverage">Beverage</option>
+                  <option value="Security">Security</option>
+                  <option value="All">All</option>
+                </select>
+            </div>
+            <div class="col-md-12 text-start pe-2 ps-2">
+                <label><input type="checkbox"> Keep me updated on EFREI'STIVAL news</label>
+            </div>
+            <div class="col-md-12 text-start pe-2 ps-2">
+                <label><input type="checkbox" required> Accept the terms and conditions</label>
+            </div>
+            <div class="col-md-12">
+                <button type="submit" class="box w-50">SUBMIT</button>
+            </div>
+        </form>
       </div>
-      <div class="col-md-6 pe-2 ps-2">
-        <input type="text" name="lastName" class="form-control" placeholder="Last name" required>
+      <div id="confirmationMessage" class="alert alert-success m-3 d-none p-5" role="alert">
+        Your message has been sent successfully!
       </div>
-      <div class="col-md-6 pe-2 ps-2">
-        <input type="number" name="age" class="form-control" placeholder="Age" min="1" max="99" required>
-      </div>
-      <div class="col-md-6 pe-2 ps-2">
-        <input type="tel" name="phone" class="form-control" placeholder="Phone number" required>
-      </div>
-      <div class="col-md-12 pe-2 ps-2">
-        <input type="email" name="email" class="form-control" placeholder="Email" required>
-      </div>
-      <div class="col-md-12 pe-2 ps-2">
-        <select name="jobs" class="form-control" required>
-          <option value="" disabled selected>Choose a job</option>
-          <option value="Ticketing">Ticketing</option>
-          <option value="Eco Team">Eco Team</option>
-          <option value="Beverage">Beverage</option>
-          <option value="Security">Security</option>
-          <option value="All">All</option>
-        </select>
-      </div>
-      <div class="col-md-12 text-start pe-2 ps-2">
-        <label><input type="checkbox"> Keep me updated on EFREI'STIVAL news</label>
-      </div>
-      <div class="col-md-12 text-start pe-2 ps-2">
-        <label><input type="checkbox" required> Accept the terms and conditions</label>
-      </div>
-      <div class="col-md-12">
-        <button type="submit" class="box w-75">SUBMIT</button>
-      </div>
-    </form>
   </div>
 </main>
-
-  <!-- ========== fin main ========== -->
-  <!-- ========== footer ========== -->
-
-  <footer>
-    <div class="m-2 text-center">
-      <h6>Copyright &copy; 2025 — All rights reserved.</h6>
-      <h6>Designed by
-        <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
-        <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
-        <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
-        <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
-      </h6>
-    </div>
-  </footer>
-  <!-- ========== fin footer ========== -->
+<!-- ========== fin main ========== -->
+<!-- ========== footer ========== -->
+<footer>
+  <div class="m-2 text-center">
+    <h6>Copyright &copy; 2025 — All rights reserved.</h6>
+    <h6>Designed by
+      <a href="https://www.linkedin.com/in/maxime-madureira/">Maxime MADUREIRA</a>,
+      <a href="https://www.linkedin.com/in/chahe-papazian-7584a3282/">Chahe PAPAZIAN</a>,
+      <a href="https://www.linkedin.com/in/brouillac/">Julien BROUILLAC</a>,
+      <a href="https://www.linkedin.com/in/timeo-laubignat/">Timéo LAUBIGNAT.</a>
+    </h6>
+  </div>
+</footer>
+<!-- ========== fin footer ========== -->
 </body>
 </html>

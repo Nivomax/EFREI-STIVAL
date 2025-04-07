@@ -36,9 +36,33 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function clearCart() {
-        // Réinitialisation des compteurs
         Object.keys(counts).forEach(id => counts[id] = 0);
         items.forEach(({ id }) => updateUI(id));
+    }
+
+    function handleBuy() {
+        let total = 0;
+        let receipt = "✅ Purchase Confirmation:\n\n";
+        let hasItems = false;
+
+        items.forEach(({ id, label, price }) => {
+            const quantity = counts[id];
+            if (quantity > 0) {
+                receipt += `- ${label} (x${quantity}) = ${quantity * price}€\n`;
+                total += quantity * price;
+                hasItems = true;
+            }
+        });
+
+        if (!hasItems) {
+            alert("❌ Your cart is empty. Please select tickets before buying.");
+            return;
+        }
+
+        receipt += `\n💰 Total Paid: ${total}€\n\n🎉 Thank you for your purchase!`;
+        alert(receipt);
+
+        clearCart(); // On vide le panier après l'achat
     }
 
     function attachEvents() {
@@ -50,9 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (minus) minus.addEventListener("click", () => { if (counts[id] > 0) counts[id]--; updateUI(id); });
         });
 
-        // Ajouter l'événement pour vider le panier
         const clear = document.getElementById("btn-clear-cart");
         if (clear) clear.addEventListener("click", clearCart);
+
+        const buyBtn = document.querySelector(".buy");
+        if (buyBtn) buyBtn.addEventListener("click", handleBuy);
     }
 
     attachEvents();
