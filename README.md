@@ -39,5 +39,5 @@ L’objectif pédagogique était de concevoir une interface utilisateur attrayan
 
 Pour toute question ou demande, vous pouvez me contacter via:
 
-Email : madureirapro@gmail.com
+Email : maxime.madureira@gmail.com
 LinkedIn : www.linkedin.com/in/maxime-madureira
