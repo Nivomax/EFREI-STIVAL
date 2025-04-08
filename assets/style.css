@@ -144,7 +144,7 @@ button:hover {
 }
 
 .date{
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .palestine{
@@ -176,6 +176,7 @@ button:hover {
 .article-list{
     font-size: 20px;
 }
+
 /* ============================== navbar ================================= */
 .navbar{
     position: fixed;
