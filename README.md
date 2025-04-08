@@ -1,5 +1,5 @@
 # Site web : EFREI'STIVAL 🎵
-<img src="/assets/img/design.png">
+<img src="/assets/img/design.PNG">
 
 ## CONTEXTE :
 
