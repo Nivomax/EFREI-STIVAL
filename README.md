@@ -1,12 +1,14 @@
-      
-- animation entre chaque page
+-- SITE WEB POUR UN FESTIVAL DE MUSIQUE FICTIF --
 
-  
-PAGE TICKET :
-- systeme de paiement
+Technologies utilisées :
 
-PAGE BENEVOLE :
-- alerte de validation quand formulaire bien envoyé
+- HTML 
+- CSS
+- BOOTSTRAP
+- PHP
 
-à FAIRE, BDD :
-Achat ticket, bénévolat et donation
+Amélioration à venir :
+
+- Chatbot
+- animations entre chaque page
+- Système de paiement
