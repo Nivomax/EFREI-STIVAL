@@ -12,7 +12,7 @@ Le site repose sur une stack HTML/CSS/JavaScript et intègre un design responsiv
 Une attention particulière a été portée à l’UX/UI avec une palette de couleurs vives pour refléter l’identité culturelle du festival.
 
 L’objectif pédagogique était de concevoir une interface utilisateur attrayante et fonctionnelle, tout en respectant les bonnes pratiques de structuration du code et de design web.
- 
+
 
 ## Technologies utilisées :
 
@@ -20,6 +20,7 @@ L’objectif pédagogique était de concevoir une interface utilisateur attrayan
 - CSS
 - BOOTSTRAP
 - PHP
+- JavaScript
 
 
 ## Fonctionnalités principales
@@ -39,5 +40,5 @@ L’objectif pédagogique était de concevoir une interface utilisateur attrayan
 
 Pour toute question ou demande, vous pouvez me contacter via:
 
-Email : madureirapro@gmail.com
+Email : maxime.madureira@gmail.com
 LinkedIn : www.linkedin.com/in/maxime-madureira
